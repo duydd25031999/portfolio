@@ -1,0 +1,39 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: $header-height 0 0 0;
+    color: $dark-color;
+    line-height: 1.6;
+    background-color: $white-color;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

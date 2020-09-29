@@ -1,0 +1,32 @@
+.container {
+    max-width: 1024px;
+    margin: 0 $m-2;
+    display: flex;
+}
+
+.section {
+    padding-top: $m-6;
+    padding-bottom: $m-4;
+    min-height: 100vh;
+    text-align: center;
+
+    &__title {
+        margin-top: $m-2;
+        margin-bottom: $m-4;
+        font-size: $h2-font-size;
+        color: $white-color;
+        position: relative;
+
+        &::after {
+            background-color: $white-color;
+            content: "";
+            display: block;
+            position: absolute;
+            top: $m-4;
+            width: 4rem;
+            height: $underline-height;
+            margin: auto;
+            left: calc(50% - 2rem);
+        }
+    }
+}

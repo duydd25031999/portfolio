@@ -1,0 +1,77 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $dark-color;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    font-weight: $font-semi;
+
+    &__logo {
+        color: $primary-color;
+    }
+
+    &__item {
+        margin-bottom: $m-4;
+        height: 1.45rem;
+    }
+
+    &__link {
+        position: relative;
+        color: $dark-color;
+
+        &::after {
+            background-color: $dark-color;
+            content: "";
+            display: block;
+            position: absolute;
+            top: $m-4;
+            left: 0;
+            width: 0;
+            transition: 0.5s;
+        }
+    }
+
+    &__toggle {
+        font-size: $icon-font-size;
+        cursor: pointer;
+        color: $white-color;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .active::after {
+        background-color: $dark-color;
+        content: "";
+        display: block;
+        position: absolute;
+        top: $m-4;
+        left: 0;
+        width: 100%;
+        height: $underline-height;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        &__menu {
+            position: fixed;
+            top: $header-height;
+            right: -100%;
+            width: 80%;
+            height: 100%;
+            background-color: $blur-color;
+            padding: $m-4;
+            transition: 0.5s;
+        }
+    }
+}
