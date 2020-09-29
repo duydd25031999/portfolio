@@ -1,9 +1,29 @@
 .home {
-    background-image: url('../images/prefil.jpg');
+    background-image: url('../images/prefil-small.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top;
-    background-size: contain;
-    height: 100vh;
-    margin: 0;
+    background-size: cover;
+    height: $section-height;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: $big-font-size;
+        color: $primary-color;
+        margin-bottom: $m-2;
+    }
+
+    &__name {
+        color: $white-color;
+        font-size: 1.25 * $big-font-size;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        background-image: url('../images/prefil-big.jpg');
+    }
 }

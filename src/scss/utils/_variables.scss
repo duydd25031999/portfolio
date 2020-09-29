@@ -1,15 +1,17 @@
 // Common
 $header-height: 3rem;
 $font-semi: 600;
+$radius: 0.5rem;
+$section-height: calc(100vh - 3rem);
 
 // Colors
 $primary-color: #a39274;
 $white-color: #dfd8c8;
 $dark-color: #252523;
-$blur-color: rgba(255, 255, 255, 0.2);
+$blur-color: rgba(255, 255, 255, 0.9);
 
 // Fonts
-$big-font-size: 2rem;
+$big-font-size: 3rem;
 $h2-font-size: 1.25rem;
 $normal-font-size: 0.938rem;
 $small-font-size: 0.813rem;

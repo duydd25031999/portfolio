@@ -16,6 +16,7 @@
 
     &__logo {
         color: $primary-color;
+        font-size: $h2-font-size;
     }
 
     &__item {
@@ -26,6 +27,7 @@
     &__link {
         position: relative;
         color: $dark-color;
+        font-size: $h2-font-size;
 
         &::after {
             background-color: $dark-color;
