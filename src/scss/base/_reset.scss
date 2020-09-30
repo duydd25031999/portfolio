@@ -10,9 +10,8 @@ html {
 
 body {
     margin: $header-height 0 0 0;
-    color: $dark-color;
+    color: $second-color;
     line-height: 1.6;
-    background-color: $white-color;
 }
 
 h1,
@@ -29,7 +28,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: $dark-color;
+    color: $second-color;
 }
 
 img {

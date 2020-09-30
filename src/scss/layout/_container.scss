@@ -6,24 +6,24 @@
 }
 
 .section {
-    padding-top: $m-6;
+    padding-top: $m-2;
     padding-bottom: $m-4;
-    min-height: 100vh;
+    min-height: $section-height;
     text-align: center;
 
     &__title {
         margin-top: $m-2;
         margin-bottom: $m-4;
         font-size: $h2-font-size;
-        color: $white-color;
+        color: $primary-color;
         position: relative;
 
         &::after {
-            background-color: $white-color;
+            background-color: $primary-color;
             content: "";
             display: block;
             position: absolute;
-            top: $m-4;
+            top: $m-6;
             width: 4rem;
             height: $underline-height;
             margin: auto;

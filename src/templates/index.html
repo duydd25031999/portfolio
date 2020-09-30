@@ -1,66 +1,261 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
 
-    <body>
-        <!-- HEADER -->
-        <header class="header" id="header">
-            <nav class="container nav">
-                <div>
-                    <a href="#home" class="nav__logo">Do Duc Duy</a>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico">
+    <title></title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="container nav">
+            <div>
+                <a href="#home" class="nav__logo">Do Duc Duy</a>
+            </div>
+
+            <div class="nav__menu" id="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">Work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section class="container home" id="home">
+            <div class="home__content">
+                <h1 class="home__title">
+                    Hello <br>
+                    I am <span class="home__name">Do Duc Duy</span> <br>
+                    <i>Web Developer</i>
+                </h1>
+            </div>
+            <ul class="home__social">
+                <li>
+                    <a href="#" class="home__social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="home__social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <a href="#" class="button home__button">Download CV</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+            <h1 class="section__title">
+                ABOUT
+            </h1>
+            <div class="container about__container">
+                <div class="about__img">
+                    <img src="../images/about.jpg" alt="">
                 </div>
-
-                <div class="nav__menu" id="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active">Home</a>
+                <div class="about__info">
+                    <h2 class="subtitle about__name">Do Duc Duy</h2>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <span class="about__icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </span>
+                            <span class="about__value">
+                                March 25, 1999
+                            </span>
                         </li>
-                        <li class="nav__item">
-                            <a href="#information" class="nav__link">Information</a>
+                        <li class="about__item">
+                            <span class="about__icon">
+                                <i class="fas fa-mars"></i>
+                            </span>
+                            <span class="about__value">
+                                Male
+                            </span>
                         </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                        <li class="about__item">
+                            <span class="about__icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </span>
+                            <span class="about__value">
+                                0947948155
+                            </span>
                         </li>
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">Work</a>
+                        <li class="about__item">
+                            <span class="about__icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="about__value">
+                                doducduy.vietnam@gmail.com
+                            </span>
                         </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">Skills</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">Projects</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
+                        <li class="about__item">
+                            <span class="about__icon">
+                                <i class="fas fa-home"></i>
+                            </span>
+                            <span class="about__value">
+                                Km29 Thang Long Avenue, Thach That, Hanoi
+                            </span>
                         </li>
                     </ul>
                 </div>
 
-                <div class="nav__toggle" id="nav__toggle">
-                    <i class="fas fa-bars"></i>
+                <div class="">
+                    <h2 class="subtitle about__subtitle">
+                        Objective
+                    </h2>
+                    <p class="about__text">
+                        I always desire to work in a dynamic and professional environment so that I can learn and
+                        develop myself. I utilize my skills, software development experience and technology savvy to
+                        become a senior developer and bring a lot of value to the company.
+                    </p>
                 </div>
-            </nav>
-        </header>
-          
-        <main>
-            <section class="container home" id="home">
-                <div>
-                    <h1 class="home__title">
-                        Hello <br>
-                        I am <span class="home__name">Do Duc Duy</span> <br>
-                        <i>Web Developer</i> 
-                    </h1>
-                </div>
-                <div>
-                    <a href="#" class="button home__button">Download CV</a>
-                </div>
-            </section>
-        </main>
 
-        <!-- FOOTER -->
-        <footer class="footer" id="footer"></footer>
-    </body>
+                <div class="about__education">
+                    <h2 class="subtitle about__subtitle">
+                        Education
+                    </h2>
+                    <div class="about__content">
+                        <div class="about__timeline">
+                            September 2017 - Now
+                        </div>
+                        <div class="about__school">
+                            <img src="../images/university.png" alt="">
+                            <p class="about__major">
+                                <i>Major: Software Engineering</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__education">
+                    <h2 class="subtitle about__subtitle">
+                        Honors & Awards
+                    </h2>
+                    <div class="about__content">
+                        <div class="about__timeline">
+                            September 2017
+                        </div>
+                        <div class="about__school">
+                            Received a scholarship of 70% of tuition fee in the entrance exam of FPT University
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WORK -->
+        <section class="section work" id="work">
+            <h1 class="section__title">
+                WORK
+            </h1>
+            <div class="work__container">
+                <div class="work__company">
+                    <div class="work__timeling">
+                        December 2019 - May 2020
+                    </div>
+                    <div class="work__img">
+                        <img src="../images/impl.png" alt="">
+                    </div>
+                    <div class="work__job">
+                        <h3 class="work__subtitle">
+                            Full-time web developer
+                        </h3>
+                    </div>
+                    <div class="work__job">
+                        <h3 class="work__subtitle">
+                            Main responsibilities:
+                        </h3>
+                        <ul class="work__list">
+                            <li class="work__item">
+                                Developing open-source software
+                            </li>
+                            <li class="work__item">
+                                Main programming language is PHP
+                            </li>
+                            <li class="work__item">
+                                Using HTML, CSS, Javascript to develop UI
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work__company">
+                    <div class="work__timeling">
+                        January 2019 - August 2019
+                    </div>
+                    <div class="work__img">
+                        <img src="../images/fsoft.png" alt="">
+                    </div>
+                    <div class="work__job">
+                        <h3 class="work__subtitle">
+                            Part-time web developer
+                        </h3>
+                        <ul class="work__list">
+                            <li class="work__item">
+                                Front-end developer
+                            </li>
+                            <li class="work__item">
+                                Using framework Vue, Vuetify
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="work__job">
+                        <h3 class="work__subtitle">
+                            Achievements and skills gained:
+                        </h3>
+                        <ul class="work__list">
+                            <li class="work__item">
+                                Be assessed positively by the shop’s boss: active, extremely adaptable...
+                            </li>
+                            <li class="work__item">
+                                Experience the Agile approach to developing professional software
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section skills" id="skills">
+            <h1 class="section__title">
+                SKILLS
+            </h1>
+            <div class="skills__container">
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer"></footer>
+</body>
+
 </html>

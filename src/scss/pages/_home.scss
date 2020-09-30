@@ -1,7 +1,7 @@
 .home {
     background-image: url('../images/prefil-small.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     height: $section-height;
 
@@ -16,9 +16,24 @@
     }
 
     &__name {
-        color: $white-color;
+        color: $second-color;
         font-size: 1.25 * $big-font-size;
         font-weight: bolder;
+    }
+
+    &__social {
+        display: flex;
+        & li {
+            margin-right: $m-6;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__social-icon {
+        font-size: $icon-font-size;
+        color: $primary-color;
     }
 }
 
