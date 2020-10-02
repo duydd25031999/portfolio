@@ -20,6 +20,7 @@
 
     &__info {
         min-width: 50%;
+        margin-bottom: $m-4;
     }
 
     &__name {
@@ -58,15 +59,17 @@
         border-right: 1px solid $second-color;
         padding-right: $m-4;
         margin-right: $m-4;
+        
     }
 
     &__school {
+        width: 66.6%;
         & img {
             width: 200px;
         }
     }
 
     &__major {
-        text-align: center;
+        text-align: left;
     }
 }

@@ -1,0 +1,48 @@
+.projects {
+    &__container {
+        padding: $m-6 $m-2;
+        text-align: left;
+    }
+
+    &__timeline {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__item {
+        padding: $m-4;
+        margin-bottom: $m-6;
+        border-radius: $radius;
+        transition: 0.3s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            box-shadow: 6px 7px 20px -3px rgba(0,0,0,0.75);
+        }
+    }
+
+    &__name {
+        font-size: $big-font-size;
+        font-weight: bolder;
+    }
+
+    &__time {
+        font-size: $small-font-size;
+        margin-bottom: $m-3;
+        border-radius: $m-3;
+        padding: $m-1;
+    }
+
+    &__list {
+        list-style-type: disc;
+    }
+
+    &__subtitle {
+        color: $primary-color;
+    }
+}
