@@ -1,0 +1,74 @@
+.about {
+    &__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    &__img {
+        margin-bottom: $m-4;
+        padding-left: $m-2;
+        padding-right: $m-2;
+        width: 50%;
+
+        & img {
+            border-radius: $radius;
+            margin: 0 auto;
+        }
+    }
+
+    &__info {
+        min-width: 50%;
+        margin-bottom: $m-4;
+    }
+
+    &__name {
+        font-size: $big-font-size;
+    }
+
+    &__icon {
+        font-size: $icon-font-size;
+        color: $primary-color;
+        margin-right: $m-2;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: $m-4;
+    }
+
+    &__education {
+        width: 100%;
+        margin-bottom: $m-6;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: $h2-font-size;
+        color: $primary-color;
+        margin-bottom: $m-4;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__timeline {
+        border-right: 1px solid $second-color;
+        padding-right: $m-4;
+        margin-right: $m-4;
+        
+    }
+
+    &__school {
+        & img {
+            width: 200px;
+        }
+    }
+
+    &__major {
+        text-align: left;
+    }
+}
