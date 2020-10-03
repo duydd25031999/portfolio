@@ -1,3 +1,4 @@
+// TOGGLE MENU
 const navNemu = document.getElementById("nav__menu");
 
 function intiToggleNavMenuEvent() {
@@ -7,20 +8,35 @@ function intiToggleNavMenuEvent() {
     });
 }
 
-function initActiveLinkEvent() {
-    const navLinks = document.querySelectorAll('.nav__link');
-    let previousLink = document.querySelector('.active');
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            previousLink.classList.remove('active');
-            link.classList.add('active');
-            previousLink = link;
-            navNemu.classList.remove('show');
-        });
-    })
+// HIDE MENU
+var navLinks = document.querySelectorAll('.nav__link');
+function hideMenu() {
+    nav.classList.remove('show');
+}
+
+// SCROLL SECTIONS ACTIVE LINK
+var sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+    var scrollY = window.pageYOffset;
+    sections.forEach(function(section) {
+        var sectionHeight = section.offsetHeight;
+        var sectionTop = section.offsetTop - 50;
+        var sectionId = section.getAttribute('id');
+        var navLink = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            navLink.classList.add('active');
+        } else {
+            navLink.classList.remove('active');
+        }
+    });
 }
 
 export const run = () => {
     intiToggleNavMenuEvent();
-    initActiveLinkEvent();
+    window.addEventListener('scroll', scrollActive);
+
+    navLinks.forEach(function(element) {
+        element.addEventListener('click', hideMenu);
+    });
 };

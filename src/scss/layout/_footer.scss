@@ -1,0 +1,29 @@
+.footer {
+    background-color: $second-color;
+    color: $white-color;
+    padding: $m-4;
+    font-weight: $font-semi;
+
+    & > * {
+        display: block;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: $m-4;
+        font-weight: $font-semi;
+    }
+
+    &__social {
+        margin-bottom: $m-4;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon {
+        color: $white-color;
+        font-size: $icon-font-size;
+        margin: 0 $m-2;
+    }
+}

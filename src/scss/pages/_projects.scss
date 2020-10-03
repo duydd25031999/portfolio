@@ -27,7 +27,7 @@
     }
 
     &__name {
-        font-size: $big-font-size;
+        font-size: $h2-font-size;
         font-weight: bolder;
     }
 
@@ -44,5 +44,9 @@
 
     &__subtitle {
         color: $primary-color;
+    }
+
+    &__line {
+        font-size: $small-font-size;
     }
 }

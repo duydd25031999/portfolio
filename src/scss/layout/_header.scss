@@ -5,6 +5,7 @@
     left: 0;
     z-index: $z-fixed;
     opacity: 1;
+    box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
 .nav {
@@ -13,6 +14,7 @@
     align-items: center;
     height: $header-height;
     font-weight: $font-semi;
+    margin-bottom: 0;
 
     &__logo {
         color: $primary-color;
@@ -20,21 +22,21 @@
     }
 
     &__item {
-        margin-bottom: $m-4;
+        margin-bottom: 0;
         height: 1.45rem;
+        margin-left: $m-6;
     }
 
     &__link {
         position: relative;
         color: $second-color;
-        font-size: $h2-font-size;
 
         &::after {
             background-color: $second-color;
             content: "";
             display: block;
             position: absolute;
-            top: $m-4;
+            top: $m-3;
             left: 0;
             width: 0;
             transition: 0.5s;
@@ -45,6 +47,7 @@
         font-size: $icon-font-size;
         cursor: pointer;
         color: $second-color;
+        display: none;
     }
 
     .show {
@@ -56,7 +59,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: $m-4;
+        top: $m-3;
         left: 0;
         width: 100%;
         height: $underline-height;
@@ -74,6 +77,24 @@
             background-color: $blur-color;
             padding: $m-4;
             transition: 0.5s;
+        }
+
+        &__item {
+            margin-bottom: $m-4;
+        }
+
+        &__link {
+            &::after {
+                top: $m-4;
+            }
+        }
+
+        &__toggle {
+            display: block;
+        }
+
+        .active::after {
+            top: $m-4;
         }
     }
 }

@@ -3,6 +3,13 @@
         text-align: left;
     }
 
+    &__collection {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
     &__item {
         margin: 0 auto;
         width: 90%;
@@ -24,6 +31,7 @@
 
     &__img {
         & img {
+            margin: 0 auto;
             width: 200px;
         }
     }
@@ -32,6 +40,7 @@
         font-size: $small-font-size;
         border-radius: $m-3;
         padding: $m-1;
+        text-align: center;
     }
 
     &__list {

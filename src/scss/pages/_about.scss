@@ -50,9 +50,9 @@
         margin-bottom: $m-4;
     }
 
-
     &__content {
         display: flex;
+        justify-content: center;
     }
 
     &__timeline {
@@ -63,7 +63,6 @@
     }
 
     &__school {
-        width: 66.6%;
         & img {
             width: 200px;
         }

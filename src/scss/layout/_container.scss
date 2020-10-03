@@ -2,11 +2,12 @@
     max-width: 1024px;
     padding: 0 $m-2;
     margin: 0 auto;
+    margin-bottom: $header-height;
     display: flex;
 }
 
 .section {
-    padding-top: $m-2;
+    padding-top: $m-4;
     padding-bottom: $m-4;
     min-height: $section-height;
     text-align: center;
