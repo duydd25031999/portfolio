@@ -15,6 +15,7 @@
     height: $header-height;
     font-weight: $font-semi;
     margin-bottom: 0;
+    background-color: $white-color;
 
     &__logo {
         color: $primary-color;
@@ -66,7 +67,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 992px) {
     .nav {
         &__menu {
             position: fixed;

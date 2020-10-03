@@ -1,4 +1,8 @@
 .contact {
+    &__container {
+        justify-content: center;
+    }
+
     &__input {
         border: 1.5px solid $second-color;
         border-radius: $radius;

@@ -9,9 +9,9 @@ function intiToggleNavMenuEvent() {
 }
 
 // HIDE MENU
-var navLinks = document.querySelectorAll('.nav__link');
+const navLinks = document.querySelectorAll('.nav__link');
 function hideMenu() {
-    nav.classList.remove('show');
+    navNemu.classList.remove('show');
 }
 
 // SCROLL SECTIONS ACTIVE LINK

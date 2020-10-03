@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .nav {
         &__list {
             display: flex;
@@ -34,25 +34,26 @@
     }
 }
 
-@media screen and (min-width: 576px) {
+@media only screen and (min-width: 1200px) {
     .projects {
-        &__timeline::before {
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: $m-1;
-            background-color: $second-color;
-            top: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: $radius;
+        &__timeline {
+            padding-left: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: $m-1;
+                background-color: $second-color;
+                top: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: $radius;
+            }
         }
 
         &__item {
             width: 50%;
-            margin-bottom: $m-6;
-            position: relative;
-            border-radius: $radius;
 
             &:nth-child(odd) {
                 float: left;
@@ -69,18 +70,8 @@
             }
 
             &::after {
-                content: '';
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                background-color: $white-color;
-                border-radius: 50%;
                 top: 0;
-                border: 4px solid $second-color;
-            }
-
-            &:hover::after {
-                background-color: $primary-color;
+                left: auto;
             }
 
             &:nth-child(odd)::after {
@@ -105,7 +96,6 @@
         &__time {
             position: absolute;
             top: -20px;
-            border: 4px solid $second-color;
         }
     }
 }

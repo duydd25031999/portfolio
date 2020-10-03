@@ -19,10 +19,12 @@
         padding: $m-1 $m-2;
         background-color: $white-color;
         border-radius: $radius;
+        border: 2px solid $second-color;
     }
 
     &__name:hover {
         background-color: $primary-color;
+        border-color: $primary-color;
         color: $white-color;
     }
 
