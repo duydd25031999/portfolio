@@ -7,11 +7,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --watch --open",
+    "dev": "webpack-dev-server --config webpack.dev.js --watch --open",
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.0",
     "autoprefixer": "^9.7.4",
     "bootstrap": "^4.4.1",
     "clean-webpack-plugin": "^3.0.0",
@@ -33,9 +32,12 @@
     "terser-webpack-plugin": "^2.3.4",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.10.1"
+    "webpack-dev-server": "^3.10.1",
+    "react-hot-loader": "^3.1.3"
   }
 }
