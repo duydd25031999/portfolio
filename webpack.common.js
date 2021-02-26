@@ -3,15 +3,16 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    main: "./src/index.js",
-    vendor: "./src/vendor.js"
+    main: "./src/index.tsx",
+    vendor: "./src/vendor.ts"
   },
   resolve: {
     modules: ['node_modules'],
     alias: {
       images: path.join(__dirname, 'src/images'),
       fonts: path.join(__dirname, 'src/fonts')
-    }
+    },
+    extensions: ['.js', '.jsx', 'ts', 'tsx'],
   },
   plugins: [
     // new Webpack.ProvidePlugin({
@@ -48,6 +49,11 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
     ]
   }
