@@ -1,0 +1,28 @@
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: $container-color-alt;
+    border-radius: 0.4rem;
+    z-index: $z-tooltip;
+    transition: 0.4s;
+
+    &__icon {
+        font-size: 1.2rem;
+        color: $text-color;
+    }
+
+    &.show-scroll {
+        bottom: 5rem;
+    }
+
+    @media screen and (min-width: $endpoint-lg) {
+        & {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+body {
+    margin: 0 0 $header-height 0;
+    padding: 0;
+    font-family: $body-font;
+    font-size: $normal-font-size;
+    background-color: $body-color;
+    color: $text-color;
+}
+
+h1, h2, h3 {
+    color: $title-color;
+    font-weight: $font-medium;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: $endpoint-lg) {
+    body {
+        margin: 3rem 0;
+    }
+}

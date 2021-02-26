@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $body-color;
+    box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.1);
+    transition: 0.3s;
+
+    @media screen and (min-width: $endpoint-lg) {
+        & {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.timeline {
+    &__content {
+        display: flex;
+    }
+
+    &__time {
+        padding-right: 1rem;
+    }
+
+    &__rounder {
+        position: relative;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: $text-color-light;
+        border-radius: 50%;
+        margin-top: 0.25rem;
+    }
+
+    &__line {
+        display: block;
+        width: 2px;
+        height: 110%;
+        background-color: $text-color-light;
+        transform: translate(7px, 0);
+    }
+
+    &__data {
+        gap: 0.5rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: $h3-font-size;
+    }
+
+    &__studies {
+        font-size: $small-font-size;
+        color: $title-color;
+    }
+
+    &__year {
+        font-size: $smaller-font-size;
+    }
+}

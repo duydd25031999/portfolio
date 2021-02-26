@@ -1,0 +1,16 @@
+.list-item {
+    &__name {
+        display: flex;
+        align-items: center;
+        margin-bottom: $mb-3;
+    }
+
+    &__circle {
+        display: inline-block;
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        background-color: $text-color;
+        margin-right: 0.75rem;
+    }
+}

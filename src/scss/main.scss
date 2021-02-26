@@ -13,10 +13,18 @@
 @import 'base/typography';
 
 @import 'components/buttons';
-@import 'components/subtitle';
+@import 'components/nav';
+@import 'components/timeline';
+@import 'components/list-item';
 
 @import 'layout/container';
 @import 'layout/header';
 @import 'layout/footer';
 
-// @import 'pages/home';
+@import 'pages/home';
+@import 'pages/social';
+@import 'pages/profile';
+@import 'pages/skills';
+@import 'pages/certificates';
+@import 'pages/references';
+@import 'pages/interest';
