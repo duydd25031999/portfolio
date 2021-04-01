@@ -1,149 +1,203 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        <title>Responsive resume cv</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Smmith</a>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="bx bx-home nav__icon"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#profile" class="nav__link">
-                                <i class="bx bx-user nav__icon"></i>
-                                Profile
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#education" class="nav__link">
-                                <i class="bx bx-book nav__icon"></i>
-                                Education
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">
-                                <i class="bx bx-receipt nav__icon"></i>
-                                Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#experience" class="nav__link">
-                                <i class="bx bx-briefcase-alt"></i>
-                                Experience
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#certificates" class="nav__link">
-                                <i class="bx bx-award"></i>
-                                Certificates
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#references" class="nav__link">
-                                <i class="bx bx-link-external"></i>
-                                References
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <title>Responsive resume cv</title>
+</head>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="bx bx-grid-alt"></i>
-                </div>
-            </nav>
-        </header>
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Smmith</a>
 
-        <main class="l-main bd-container">
-            <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        
-                        <!-- Theme change button -->
-                        <i class="bx bx-moon change-theme" id="theme-button"></i>
-    
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
-                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
-                    </section>          
-                    
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        
-                    </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="bx bx-home nav__icon"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class="bx bx-user nav__icon"></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="bx bx-book nav__icon"></i>
+                            Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="bx bx-receipt nav__icon"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class="bx bx-briefcase-alt"></i>
+                            Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class="bx bx-award"></i>
+                            Certificates
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class="bx bx-link-external"></i>
+                            References
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        
-                    </section>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/perfil.jpg" alt="" class="home__img">
+                            <h1 class="home__tile">SMITH <b>MATTHEW</b></h1>
+                            <h3 class="home__profession">Web developer</h3>
+
+                            <!-- Button to generate and download the pdf. Available for mobile. -->
+                            <div>
+                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i>
+                                Av. Bolivar #123 Lima - Peru
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i>
+                                user@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i>
+                                999-888-777
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">
+                        SOCIAL
+                    </h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="" class="social__link">
+                            <i class="bx bxl-linkedin-square social__icon"></i>
+                            @smmithmat
+                        </a>
+                        <a href="" class="social__link">
+                            <i class="bx bxl-facebook-square social__icon"></i>
+                            @smmithmat
+                        </a>
+                        <a href="" class="social__link">
+                            <i class="bx bxl-instagram social__icon"></i>
+                            @smmithmat
+                        </a>
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">PROFILE</h2>
+
+                    <p class="profile__description">
+                        I am a person, reponsible with their work during working hours. Finish various technical and
+                        higher studies at universities. I have several years of experience and achievements in the labor
+                        field.
+                    </p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+
+                </section>
 
 
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        
-                    </section>
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
 
-                </div>
+                </section>
 
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        
-                    </section>
+            </div>
 
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        
-                    </section>
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
 
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        
-                    </section>
+                </section>
 
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        
-                    </section>
-                    
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        
-                    </section>
-                </div>
-            </div>        
-        </main>
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
 
-        <!--========== SCROLL TOP ==========-->
-        
+                </section>
 
-        <!--========== HTML2PDF ==========-->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
+                <!--========== REFERENCES ==========-->
+                <section class="references section" id="references">
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                </section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
