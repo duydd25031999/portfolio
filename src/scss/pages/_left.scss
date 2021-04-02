@@ -1,0 +1,105 @@
+/*========== Generate PDF button ==========*/
+.generate-pdf {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  color: var(--text-color);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--title-color);
+  }
+}
+
+/*========== HOME ==========*/
+.home {
+  position: relative;
+
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    gap: 3rem;
+    text-align: center;
+  }
+
+  &__img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: var(--mb-1);
+  }
+
+  &__title {
+    font-size: var(--h1-font-size);
+  }
+
+  &__profession {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+  }
+
+  &__address {
+    gap: 1rem;
+  }
+
+  &__information {
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    margin-right: 0.25rem;
+  }
+
+  &__button-movil {
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    color: var(--title-color);
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    transition: 0.3s;
+    font-weight: var(--font-medium);
+    margin-top: var(--mb-3);
+
+    &:hover {
+      background-color: var(--text-color);
+      color: var(--container-color);
+    }
+  }
+}
+
+/*========== SOCIAL ==========*/
+.social {
+  &__container {
+    grid-template-columns: max-content;
+    gap: 1rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--title-color);
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    margin-right: 0.25rem;
+  }
+}
+
+/*========== PROFILE ==========*/
+.profile {
+  &__description {
+    text-align: center;
+  }
+}

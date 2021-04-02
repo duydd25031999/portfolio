@@ -1,33 +1,44 @@
-// Common
-$header-height: 3rem;
-$font-semi: 600;
-$radius: 0.5rem;
-$section-height: 100vh;
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
 
-// Colors
-$primary-color: #4070F4;
-$second-color: #0E2431;
-$white-color: #dfd8c8;
-$blur-color: rgba(255, 255, 255, 0.9);
+  /*========== Colors ==========*/
+  --title-color: #0b0a0a;
+  --text-color: #403a3a;
+  --text-color-light: #707070;
+  --container-color: #fafafa;
+  --container-color-alt: #f0efef;
+  --body-color: #fcfcfc;
 
-// Fonts
-$big-font-size: 3rem;
-$h2-font-size: 1.75rem;
-$normal-font-size: 0.938rem;
-$small-font-size: 0.813rem;
-$underline-height: 0.18rem; 
-$icon-font-size: 2rem;
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
 
-// Margins
-$m-1: 0.5rem;
-$m-2: 1rem;
-$m-3: 1.5rem;
-$m-4: 2rem;
-$m-5: 2.5rem;
-$m-6: 3rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
-/* z index */
-$z-back: -10;
-$z-normal: 1;
-$z-tooltip: 10;
-$z-fixed: 100;
+  /*========== Margenes ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Font size variables to scale cv ==========*/
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
+}

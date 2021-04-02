@@ -1,19 +1,2 @@
-@font-face {
-    font-family: "Nunito";
-    src: url("~fonts/Nunito-Regular.eot");
-    src: url("~fonts/Nunito-Regular.eot?#iefix") format("embedded-opentype"),
-        url("~fonts/Nunito-Regular.woff2") format("woff2"),
-        url("~fonts/Nunito-Regular.woff") format("woff"),
-        url("~fonts/Nunito-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-$body-font: "Nunito", sans-serif;
-  
-html,
-body {
-    font-family: $body-font;
-    font-weight: $font-semi;
-    font-size: $normal-font-size;
-}
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
