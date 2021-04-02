@@ -7,6 +7,7 @@
   background-color: var(--body-color);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  height: auto;
 }
 
 /*========== NAV ==========*/
@@ -15,25 +16,6 @@
   display: none;
   justify-content: space-between;
   align-items: center;
-
-  @media screen and (max-width: 968px) {
-    & {
-      display: flex;
-    }
-
-    &__menu {
-      position: fixed;
-      bottom: -100%;
-      left: 0;
-      width: 100%;
-      padding: 2rem 1.5rem;
-      background-color: var(--body-color);
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-      border-radius: 1rem 1rem 0 0;
-      z-index: var(--z-fixed);
-      transition: 0.3s;
-    }
-  }
 
   &__logo,
   &__toggle {
@@ -80,5 +62,26 @@
   /* Active menu link */
   .active-link {
     color: var(--title-color);
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .nav {
+    & {
+      display: flex;
+    }
+
+    &__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      padding: 2rem 1.5rem;
+      background-color: var(--body-color);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 1rem 1rem 0 0;
+      z-index: var(--z-fixed);
+      transition: 0.3s;
+    }
   }
 }

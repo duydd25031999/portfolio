@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "./Header.jsx"
+import Header from "./Header.jsx";
 
-const App = () => (
-  <>
-    <Header />
-    <div>Hello world</div>
-  </>
-);
+const App = () => {
+  return (
+    <>
+      <Header />
+      <div>Hello world</div>
+    </>
+  );
+};
 
 export default App;

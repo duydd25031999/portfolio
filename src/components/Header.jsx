@@ -1,64 +1,84 @@
 import React from "react";
 
+const data = [
+  {
+    link: "#home",
+    icon: "bx-home",
+    text: "Home",
+  },
+  {
+    link: "#profile",
+    icon: "bx-user",
+    text: "Profile",
+  },
+  {
+    link: "#education",
+    icon: "bx-book",
+    text: "Education",
+  },
+  {
+    link: "#skills",
+    icon: "bx-receipt",
+    text: "Skills",
+  },
+  {
+    link: "#experience",
+    icon: "bx-briefcase-alt",
+    text: "Experience",
+  },
+  {
+    link: "#certificates",
+    icon: "bx-award",
+    text: "Certificates",
+  },
+  {
+    link: "#references",
+    icon: "bx-link-external",
+    text: "References",
+  },
+];
+
 const Header = () => (
-  <header class="l-header" id="header">
-    <nav class="nav bd-container">
-      <a href="#" class="nav__logo">
+  <header className="l-header" id="header">
+    <Nav />
+  </header>
+);
+
+const Nav = () => {
+  const [showMenu, setShowMenu] = React.useState(false)
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu)
+  }
+
+  return (
+    <nav className="nav bd-container">
+      <a href="#" className="nav__logo">
         Smmith
       </a>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">
-              <i class="bx bx-home nav__icon"></i>
-              Home
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#profile" class="nav__link">
-              <i class="bx bx-user nav__icon"></i>
-              Profile
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#education" class="nav__link">
-              <i class="bx bx-book nav__icon"></i>
-              Education
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="bx bx-receipt nav__icon"></i>
-              Skills
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#experience" class="nav__link">
-              <i class="bx bx-briefcase-alt"></i>
-              Experience
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#certificates" class="nav__link">
-              <i class="bx bx-award"></i>
-              Certificates
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#references" class="nav__link">
-              <i class="bx bx-link-external"></i>
-              References
-            </a>
-          </li>
+      <div className={`nav__menu ${ showMenu ? 'show-menu' : ''}`} id="nav-menu">
+        <ul className="nav__list">
+          {data.map((item, i) => (
+            <NavItem item={item} key={i} />
+          ))}
         </ul>
       </div>
 
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="bx bx-grid-alt"></i>
+      <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+        <i className="bx bx-grid-alt nav__icon"></i>
       </div>
     </nav>
-  </header>
+  );
+};
+
+const NavItem = ({ item }) => (
+  <li className="nav__item">
+    <a href={item.link} className="nav__link">
+      <i className={`bx ${item.icon} nav__icon`}></i>
+      {item.text}
+    </a>
+  </li>
 );
 
 export default Header;

@@ -9,5 +9,10 @@
 @import 'layout/header';
 // @import 'layout/footer';
 
-@import 'pages/left';
-@import 'pages/right';
+@import 'components/left';
+@import 'components/right';
+@import 'components/timeline';
+@import 'components/itemslist';
+@import 'components/scrolltop';
+
+@import 'base/dekstop';

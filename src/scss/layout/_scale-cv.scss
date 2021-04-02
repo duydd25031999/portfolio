@@ -47,37 +47,32 @@
     font-size: 1rem;
   }
 
-  & .education__container,
-  & .experience__container,
+  & .timeline__container,
   & .certificate__container {
     gap: 1rem;
   }
 
-  & .education__time,
-  & .experience__time {
+  & .timeline__time {
     padding-right: 0.5rem;
   }
 
-  & .education__rounder,
-  & .experience__rounder {
+  & .timeline__rounder {
     width: 11px;
     height: 11px;
     margin-top: 0.22rem;
   }
 
-  & .education__line,
-  & .experience__line {
+  & .timeline__line {
     width: 1px;
     height: 110%;
     transform: translate(5px, 0);
   }
 
-  & .education__data,
-  & .experience__data {
+  & .timeline__data {
     gap: 0.25rem;
   }
 
-  & .skills__name {
+  & .itemslist__name {
     margin-bottom: var(--mb-1);
   }
 

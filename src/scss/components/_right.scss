@@ -1,0 +1,43 @@
+/*========== CERTIFICATES ==========*/
+.certificate {
+  &__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+  }
+}
+
+/*========== REFERENCES ==========*/
+.references {
+  &__content {
+    gap: 0.25rem;
+  }
+
+  &__subtitle,
+  &__contact {
+    font-size: var(--smaller-font-size);
+  }
+
+  &__title {
+    font-size: var(--h3-font-size);
+  }
+}
+
+/*========== INTERESTS ==========*/
+.interests {
+  &__container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: var(--md-2);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom: 0.25rem;
+  }
+}
