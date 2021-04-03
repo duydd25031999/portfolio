@@ -1,6 +1,6 @@
 import React from "react";
 
-const data = [
+const navLinks = [
   {
     link: "#home",
     icon: "bx-home",
@@ -38,43 +38,44 @@ const data = [
   },
 ];
 
-const Header = () => (
-  <header className="l-header" id="header">
-    <Nav />
-  </header>
-);
+const userName = { first: 'Smith'}
 
-const Nav = () => {
+const Header = () => {
   const [showMenu, setShowMenu] = React.useState(false)
-
   const toggleMenu = () => {
     setShowMenu(!showMenu)
   }
+  const closeMenu = () => {
+    setShowMenu(false)
+  }
 
   return (
-    <nav className="nav bd-container">
-      <a href="#" className="nav__logo">
-        Smmith
+    // ========== HEADER ==========
+    <header className="l-header" id="header">
+      <nav className="nav bd-container">
+        <a href="#" className="nav__logo">
+          {userName.first}
       </a>
 
-      <div className={`nav__menu ${ showMenu ? 'show-menu' : ''}`} id="nav-menu">
-        <ul className="nav__list">
-          {data.map((item, i) => (
-            <NavItem item={item} key={i} />
-          ))}
-        </ul>
-      </div>
+        <div className={`nav__menu ${showMenu ? 'show-menu' : ''}`} id="nav-menu">
+          <ul className="nav__list">
+            {navLinks.map((item, i) => (
+              <NavItem item={item} key={i} onClick={closeMenu} />
+            ))}
+          </ul>
+        </div>
 
-      <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-        <i className="bx bx-grid-alt nav__icon"></i>
-      </div>
-    </nav>
-  );
+        <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+          <i className="bx bx-grid-alt nav__icon"></i>
+        </div>
+      </nav>
+    </header>
+  )
 };
 
-const NavItem = ({ item }) => (
+const NavItem = ({ item, onClick }) => (
   <li className="nav__item">
-    <a href={item.link} className="nav__link">
+    <a href={item.link} className="nav__link" onClick={onClick}>
       <i className={`bx ${item.icon} nav__icon`}></i>
       {item.text}
     </a>
