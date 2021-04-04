@@ -1,6 +1,8 @@
 import React from "react";
 import TimelineContent from './TimelineContent.jsx'
 import ItemslistData from './ItemslistData.jsx'
+import GlobalContext from '../contexts/GlobalContext.jsx'
+import html2pdf from 'html2pdf.js'
 
 const avatar = require('../images/perfil.jpg')
 
@@ -73,11 +75,31 @@ const skills = {
     ],
 }
 
-const LeftResume = ({ lightTheme, onThemeChange }) => {
+const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
+    const globalValue = React.useContext(GlobalContext)
+
+    const clickGenerate = () => {
+        document.body.classList.add('scale-cv')
+
+        const opt = {
+            margin: 1,
+            filename: "DoDucDuy_CV.pdf",
+            image: { type: "jpeg", quality: 0.98 },
+            html2canvas: { scale: 4 },
+            jsPDF: { format: "a4", orientation: "portrait" },
+        };
+
+        html2pdf(areaCv.current, opt)
+
+        setTimeout(() => {
+            document.body.classList.remove('scale-cv')
+        }, 5000)
+    }
+
     return (
         <div className="resume__left">
             {/* ========== HOME ========== */}
-            <section className="home" id="home">
+            <section ref={globalValue.refSection} className="home" id="home">
                 <div className="home__container section bd-grid">
                     <div className="home__data bd-grid">
                         <img src={avatar} alt="" className="home__img" />
@@ -102,7 +124,7 @@ const LeftResume = ({ lightTheme, onThemeChange }) => {
                 <i className={`bx ${lightTheme ? 'bx-moon' : 'bx-sun'} change-theme`} id="theme-button" onClick={onThemeChange}></i>
 
                 {/* Button to generate and download the pdf. Available for desktop. */}
-                <i className="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                <i className="bx bx-download generate-pdf" title="Generate PDF" id="resume-button" onClick={clickGenerate}></i>
             </section>
 
             {/* ========== SOCIAL ========== */}
@@ -119,7 +141,7 @@ const LeftResume = ({ lightTheme, onThemeChange }) => {
             </section>
 
             {/* ========== PROFILE ========== */}
-            <section className="profile section" id="profile">
+            <section ref={globalValue.refSection} className="profile section" id="profile">
                 <h2 className="section-title">PROFILE</h2>
 
                 <p className="profile__description">
@@ -128,7 +150,7 @@ const LeftResume = ({ lightTheme, onThemeChange }) => {
             </section>
 
             {/* ========== EDUCATION ========== */}
-            <section className="education timeline section" id="education">
+            <section ref={globalValue.refSection} className="education timeline section" id="education">
                 <h2 className="section-title">EDUCATION</h2>
 
                 <div className="timeline__container bd-grid">
@@ -141,7 +163,7 @@ const LeftResume = ({ lightTheme, onThemeChange }) => {
             </section>
 
             {/* ========== SKILLS  ========== */}
-            <section className="skills itemslist section" id="skills">
+            <section ref={globalValue.refSection} className="skills itemslist section" id="skills">
                 <h2 className="section-title">SKILLS</h2>
 
                 <div className="itemslist__content bd-grid">

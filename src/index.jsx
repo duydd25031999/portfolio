@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App.jsx";
+import { GlobalProvider } from './contexts/GlobalContext.jsx'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <GlobalProvider>
     <App />
-  </React.StrictMode>,
+  </GlobalProvider>,
   document.getElementById("root")
 );

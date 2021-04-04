@@ -13,12 +13,7 @@ module.exports = {
       fonts: path.join(__dirname, "src/fonts"),
     },
   },
-  plugins: [
-    // new Webpack.ProvidePlugin({
-    //   $: "jquery",
-    //   jQuery: "jquery"
-    // })
-  ],
+  plugins: [],
   module: {
     rules: [
       {

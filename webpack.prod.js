@@ -31,7 +31,8 @@ module.exports = merge(common, {
     ],
     splitChunks: {
       chunks: 'all'
-    }
+    },
+    runtimeChunk: 'single',
   },
   plugins: [
     new MiniCssExtractPlugin({

@@ -1,38 +1,39 @@
 import React from "react";
+import GlobalContext from '../contexts/GlobalContext.jsx'
 
 const navLinks = [
   {
-    link: "#home",
+    id: "home",
     icon: "bx-home",
     text: "Home",
   },
   {
-    link: "#profile",
+    id: "profile",
     icon: "bx-user",
     text: "Profile",
   },
   {
-    link: "#education",
+    id: "education",
     icon: "bx-book",
     text: "Education",
   },
   {
-    link: "#skills",
+    id: "skills",
     icon: "bx-receipt",
     text: "Skills",
   },
   {
-    link: "#experience",
+    id: "experience",
     icon: "bx-briefcase-alt",
     text: "Experience",
   },
   {
-    link: "#certificates",
+    id: "certificates",
     icon: "bx-award",
     text: "Certificates",
   },
   {
-    link: "#references",
+    id: "references",
     icon: "bx-link-external",
     text: "References",
   },
@@ -41,6 +42,8 @@ const navLinks = [
 const userName = { first: 'Smith'}
 
 const Header = () => {
+  const globalValue = React.useContext(GlobalContext)
+
   const [showMenu, setShowMenu] = React.useState(false)
   const toggleMenu = () => {
     setShowMenu(!showMenu)
@@ -60,7 +63,7 @@ const Header = () => {
         <div className={`nav__menu ${showMenu ? 'show-menu' : ''}`} id="nav-menu">
           <ul className="nav__list">
             {navLinks.map((item, i) => (
-              <NavItem item={item} key={i} onClick={closeMenu} />
+              <NavItem item={item} key={i} isActive={item.id == globalValue.activeSection} onClick={closeMenu} />
             ))}
           </ul>
         </div>
@@ -73,9 +76,9 @@ const Header = () => {
   )
 };
 
-const NavItem = ({ item, onClick }) => (
+const NavItem = ({ item, onClick, isActive }) => (
   <li className="nav__item">
-    <a href={item.link} className="nav__link" onClick={onClick}>
+    <a href={`#${item.id}`} className={`nav__link ${isActive && 'active-link'}`} onClick={onClick}>
       <i className={`bx ${item.icon} nav__icon`}></i>
       {item.text}
     </a>

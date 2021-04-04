@@ -1,6 +1,7 @@
 import React from "react";
 import TimelineContent from './TimelineContent.jsx'
 import ItemslistData from './ItemslistData.jsx'
+import GlobalContext from '../contexts/GlobalContext.jsx'
 
 const experience = [
     {
@@ -79,65 +80,69 @@ const interests = [
     },
 ]
 
-const RightResume = () => (
-    <div className="resume__right">
-        {/* ========== EXPERIENCE ========== */}
-        <section className="experience section" id="experience">
-            <h2 className="section-title">EXPERIENCE</h2>
+const RightResume = () => {
+    const globalValue = React.useContext(GlobalContext)
 
-            <div className="experience__container bd-grid">
-                {experience.map((item, i) => (
-                    <TimelineContent isExperence item={item} key={i} isLast={i == (experience.length - 1)} />
-                ))}
-            </div>
-        </section>
+    return (
+        <div className="resume__right">
+            {/* ========== EXPERIENCE ========== */}
+            <section ref={globalValue.refSection} className="experience section" id="experience">
+                <h2 className="section-title">EXPERIENCE</h2>
 
-        {/* ========== CERTIFICATES ========== */}
-        <section className="certificate section" id="certificates">
-            <h2 className="section-title">CERTIFICATES</h2>
+                <div className="experience__container bd-grid">
+                    {experience.map((item, i) => (
+                        <TimelineContent isExperence item={item} key={i} isLast={i == (experience.length - 1)} />
+                    ))}
+                </div>
+            </section>
 
-            <div className="certificate__container bd-grid">
-                {certificates.map((item, i) => (
-                    <CertificateContent item={item} key={i} />
-                ))}
-            </div>
-        </section>
+            {/* ========== CERTIFICATES ========== */}
+            <section ref={globalValue.refSection} className="certificate section" id="certificates">
+                <h2 className="section-title">CERTIFICATES</h2>
 
-        {/* ========== REFERENCES ========== */}
-        <section className="references section" id="references">
-            <h2 className="section-title">REFERENCES</h2>
+                <div className="certificate__container bd-grid">
+                    {certificates.map((item, i) => (
+                        <CertificateContent item={item} key={i} />
+                    ))}
+                </div>
+            </section>
 
-            <div className="references__container bd-grid">
-                {references.map((item, i) => (
-                    <ReferencesContent item={item} key={i} />
-                ))}
-            </div>
-        </section>
+            {/* ========== REFERENCES ========== */}
+            <section ref={globalValue.refSection} className="references section" id="references">
+                <h2 className="section-title">REFERENCES</h2>
 
-        {/* ========== LANGUAGES ========== */}
-        <section className="languages itemslist section">
-            <h2 className="section-title">LANGUAGES</h2>
+                <div className="references__container bd-grid">
+                    {references.map((item, i) => (
+                        <ReferencesContent item={item} key={i} />
+                    ))}
+                </div>
+            </section>
 
-            <div className="itemslist__container">
-                <ul className="itemslist__content bd-grid">
-                    <ItemslistData list={languages} />
-                </ul>
-            </div>
-        </section>
+            {/* ========== LANGUAGES ========== */}
+            <section className="languages itemslist section">
+                <h2 className="section-title">LANGUAGES</h2>
 
-        {/* ========== INTERESTS ========== */}
+                <div className="itemslist__container">
+                    <ul className="itemslist__content bd-grid">
+                        <ItemslistData list={languages} />
+                    </ul>
+                </div>
+            </section>
 
-        <section className="interests section">
-            <h2 className="section-title">INTERESTS</h2>
+            {/* ========== INTERESTS ========== */}
 
-            <div className="interests__container bd-grid">
-                {interests.map((item, i) => (
-                    <InterestsContent item={item} key={i} />
-                ))}
-            </div>
-        </section>
-    </div>
-)
+            <section className="interests section">
+                <h2 className="section-title">INTERESTS</h2>
+
+                <div className="interests__container bd-grid">
+                    {interests.map((item, i) => (
+                        <InterestsContent item={item} key={i} />
+                    ))}
+                </div>
+            </section>
+        </div>
+    )
+}
 
 const CertificateContent = ({ item }) => (
     <div className="certificate__content">
