@@ -17,7 +17,6 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
         const opt = {
             margin: 0.1,
             filename: data.pdfName,
-            // image: { type: "jpeg", quality: 0.98 },
             html2canvas: { scale: 4 },
             jsPDF: { format: "a4", orientation: "portrait" },
         };

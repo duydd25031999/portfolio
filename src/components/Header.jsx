@@ -19,7 +19,7 @@ const Header = () => {
     <header className="l-header" id="header">
       <nav className="nav bd-container">
         <a href="#" className="nav__logo">
-          {data.userName.first}
+          {data.userName.last}
       </a>
 
         <div className={`nav__menu ${showMenu ? 'show-menu' : ''}`} id="nav-menu">

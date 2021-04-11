@@ -6,9 +6,9 @@
             "text": "Home"
         },
         {
-            "id": "profile",
+            "id": "objective",
             "icon": "bx-user",
-            "text": "Profile"
+            "text": "Objective"
         },
         {
             "id": "education",
@@ -24,136 +24,232 @@
             "id": "experience",
             "icon": "bx-briefcase-alt",
             "text": "Experience"
-        },
-        {
-            "id": "certificates",
-            "icon": "bx-award",
-            "text": "Certificates"
-        },
-        {
-            "id": "references",
-            "icon": "bx-link-external",
-            "text": "References"
         }
     ],
     "userName": {
-        "first": "Smith",
-        "last": "Matthew"
+        "first": "Duy",
+        "last": "Do Duc"
     },
     "avatar": "perfil.jpg",
-    "pdfName": "DoDucDuy_CV.pdf",
+    "pdfName": "CV_DoDucDuy_FrontendDeveloper.pdf",
     "homeInfo": [
         {
             "icon": "bx-map",
-            "text": "Av. Bolivar #123 Lima - Peru"
+            "text": "Km29 Thang Long Avenue, Thach That, Hanoi"
         },
         {
             "icon": "bx-envelope",
-            "text": "user@gmail.com"
+            "text": "doducduy.vietnam@gmail.com"
         },
         {
             "icon": "bx-phone",
-            "text": "999-888-777"
+            "text": "0947948155"
         }
     ],
     "socialLinks": [
         {
-            "icon": "bxl-linkedin-square",
-            "text": "@smmithmat"
-        },
-        {
             "icon": "bxl-facebook-square",
-            "text": "@smmithmat"
+            "text": "ducduy99hp",
+            "link": "https://www.facebook.com/ducduy99hp"
         },
         {
-            "icon": "bxl-instagram",
-            "text": "@smmithmat"
+            "icon": "bxl-github",
+            "text": "duydd25031999",
+            "link": "https://github.com/duydd25031999"
+        },
+        {
+            "icon": "bxl-linkedin-square",
+            "text": "docducduy-vietnam",
+            "link": "https://www.linkedin.com/in/docducduy-vietnam"
         }
     ],
-    "profile": "I am a person, reponsible with their work during working hours. Finish various technical and higher studies at universities. I have several years of experience and achievements in the labor field.",
+    "profile": "I always desire to work in a dynamic and professional environment so that I can learn and develop myself. I utilize my skills, software development experience and technology savvy to become a senior developer and bring a lot of value to the company.",
     "education": [
         {
-            "title": "MASTER OF DESIGN",
+            "title": "SOFTWARE ENGINEERING",
             "studies": "University of Studies",
-            "year": "2010 - 2015"
-        },
-        {
-            "title": "WEB DEVELOPER",
-            "studies": "Institute Studies",
-            "year": "2016 - 2019"
-        },
-        {
-            "title": "MASTER IN UI/UX",
-            "studies": "Institute Studies",
-            "year": "2019 - 2021"
+            "year": "SEPTEMBER 2017 - NOW",
+            "description": [
+                {
+
+                }
+            ]
         }
     ],
-    "skills": {
-        "programLanguages": [
-            "Html",
-            "Css",
-            "Sass",
-            "JavaScript"
-        ],
-        "technique": [
-            "Angular",
-            "Firebase",
-            "React"
-        ]
-    },
+    "skills": [
+        {
+            "name": "Programming Language:",
+            "items": [
+                "Java",
+                "JavaScript",
+                "PHP"
+            ]
+        },
+        {
+            "name": "Web Development:",
+            "items": [
+                "HTML5",
+                "CSS3",
+                "jQuery",
+                "Bootstrap4"
+            ]
+        },
+        {
+            "name": "JavaScript Frameworks:",
+            "items": [
+                "Vue",
+                "Vuetify"
+            ]
+        },
+        {
+            "name": "PHP Frameworks:",
+            "items": [
+                "Laravel",
+                "CakePHP"
+            ]
+        },
+        {
+            "name": "Database",
+            "items": [
+                "MySQL",
+                "MongoDB"
+            ]
+        }
+    ],
     "experience": [
         {
-            "title": "MASTER OF DESIGN",
-            "company": "From 2013 to 2015 | Tech Soft",
-            "description": "Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity."
-        },
-        {
-            "title": "UI/UX DESIGN AREA",
-            "company": "From 2017 to 2019 | Adobe Inc",
-            "description": "Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity."
-        },
-        {
-            "title": "MOBILE APPLICATION DEVELOPER",
-            "company": "From 2019 to 2021 | App Tech",
-            "description": "Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity."
-        }
-    ],
-    "certificates": [
-        {
-            "title": "Certified for compliance in the work area (2012)",
-            "description": "For meeting the expectations of the leading the team to work the specifed tasks in the labor field."
-        },
-        {
-            "title": "Certified of attendance on computer technology",
-            "description": "For meeting the expectations of the leading the team to work the specifed tasks in the labor field."
-        },
-        {
-            "title": "Achievement medal for productivity excellence during the year (2019)",
-            "description": "For meeting the expectations of the leading the team to work the specifed tasks in the labor field."
-        }
-    ],
-    "references": [
-        {
-            "position": "Sr. Director",
-            "name": "Mr. Clay Doe",
-            "contacts": [
-                "Phone: 999-888-777",
-                "Email: user@gmail.com"
+            "title": "WEB DEVELOPER",
+            "company": "IMPL VIETNAM",
+            "year": "DECEMBER 2019 – TO MAY 2020",
+            "description": [
+                {
+                    "title": "Responsibilities:",
+                    "content": [
+                        "Full-time job.",
+                        "Maintain and develop of open-source web projects for Japanese customers.",
+                        "Main programming language is PHP.",
+                        "Using PHP framework (Laravel, CakePHP) and MySQL database.",
+                        "Using Bootstrap 4, jQuery to develop UI."
+                    ]
+                },
+                {
+                    "title": "Achievements and skills gained:",
+                    "content": [
+                        "Developing open-source software.",
+                        "Exposed to the way Japanese customers work.",
+                        "Deep study of the theory of HTML, CSS, JavaScript."
+                    ]
+                }
+            ],
+            "projects": [
+                {
+                    "name": "SoundID",
+                    "year": "MARCH 2020 – MAY 2020",
+                    "description": [
+                        {
+                            "title": "SoundID is a bar reservation project in Japan"
+                        },
+                        {
+                            "title": "Positions: Web Developer with Frameworks: CakePHP, Bootstrap, jQuery and Database: MySQL."
+                        },
+                        {
+                            "title": "Responsibilities:",
+                            "content": [
+                                "Development",
+                                "Optimize code",
+                                "Bug Fixing"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MoneyLab",
+                    "year": "FEBRUARY 2020 – MARCH 2020",
+                    "description": [
+                        {
+                            "title": "MoneyLab is a project that manages real estate records."
+                        },
+                        {
+                            "title": "Positions: Backend Developer with Frameworks: Laravel and Database: MySQL."
+                        },
+                        {
+                            "title": "Responsibilities:",
+                            "content": [
+                                "Development",
+                                "Optimize code",
+                                "Bug Fixing"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Slownet",
+                    "year": "JANUARY 2020 – TO FEBRUARY 2020",
+                    "description": [
+                        {
+                            "title": "Online diary for the elderly in Japan to store daily activities, emotions, health information. From that data the app gives advice to the user."
+                        },
+                        {
+                            "title": "Positions: Web Developer with Frameworks: Laravel, Bootstrap, jQuery and Database: MySQL."
+                        },
+                        {
+                            "title": "Responsibilities:",
+                            "content": [
+                                "Maintain and develop new features",
+                                "Bug Fixing"
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
-            "position": "Mag. Developer",
-            "name": "Mr. Robbinson Bass",
-            "contacts": [
-                "Phone: 999-888-777",
-                "Email: user@gmail.com"
+            "title": "FRONT-END DEVELOPER",
+            "company": "FPT SOFTWARE",
+            "year": "DECEMBER 2019 – TO MAY 2020",
+            "description": [
+                {
+                    "title": "Responsibilities:",
+                    "content": [
+                        "Part-time job.",
+                        "Develop and optimize the product.",
+                        "Using framework Vue, Vuetify."
+                    ]
+                },
+                {
+                    "title": "Achievements and skills gained:",
+                    "content": [
+                        "Developing a professional project for the first time.",
+                        "Experience the Agile approach to developing professional software.",
+                        "Experience advanced technologies such as cloud storage, artificial intelligence."
+                    ]
+                }
+            ],
+            "projects": [
+                {
+                    "name": "akaTrans",
+                    "year": "JANUARY 2020 – FEBRUARY 2020",
+                    "description": [
+                        {
+                            "title": "akaTrans is a computer-assisted translation tool which improves language professional’s productivity at every step of the translation process."
+                        },
+                        {
+                            "title": "Positions: Front-end Developer with Frameworks: Vue, Vuetify."
+                        },
+                        {
+                            "title": "Responsibilities:",
+                            "content": [
+                                "Analysis and design",
+                                "Development",
+                                "Review code",
+                                "Optimize code",
+                                "Bug Fixing"
+                            ]
+                        }
+                    ]
+                }
             ]
         }
-    ],
-    "languages": [
-        "Spanish",
-        "English",
-        "French"
     ],
     "interests": [
         {
@@ -161,16 +257,12 @@
             "name": "Music"
         },
         {
-            "icon": "bxs-plane-alt",
+            "icon": "bx-bus",
             "name": "Travel"
         },
         {
             "icon": "bx-book",
             "name": "Read"
-        },
-        {
-            "icon": "bx-dumbbell",
-            "name": "Fitness"
         }
     ]
 }
