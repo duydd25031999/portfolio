@@ -1,0 +1,176 @@
+{
+    "navLinks": [
+        {
+            "id": "home",
+            "icon": "bx-home",
+            "text": "Home"
+        },
+        {
+            "id": "profile",
+            "icon": "bx-user",
+            "text": "Profile"
+        },
+        {
+            "id": "education",
+            "icon": "bx-book",
+            "text": "Education"
+        },
+        {
+            "id": "skills",
+            "icon": "bx-receipt",
+            "text": "Skills"
+        },
+        {
+            "id": "experience",
+            "icon": "bx-briefcase-alt",
+            "text": "Experience"
+        },
+        {
+            "id": "certificates",
+            "icon": "bx-award",
+            "text": "Certificates"
+        },
+        {
+            "id": "references",
+            "icon": "bx-link-external",
+            "text": "References"
+        }
+    ],
+    "userName": {
+        "first": "Smith",
+        "last": "Matthew"
+    },
+    "avatar": "perfil.jpg",
+    "pdfName": "DoDucDuy_CV.pdf",
+    "homeInfo": [
+        {
+            "icon": "bx-map",
+            "text": "Av. Bolivar #123 Lima - Peru"
+        },
+        {
+            "icon": "bx-envelope",
+            "text": "user@gmail.com"
+        },
+        {
+            "icon": "bx-phone",
+            "text": "999-888-777"
+        }
+    ],
+    "socialLinks": [
+        {
+            "icon": "bxl-linkedin-square",
+            "text": "@smmithmat"
+        },
+        {
+            "icon": "bxl-facebook-square",
+            "text": "@smmithmat"
+        },
+        {
+            "icon": "bxl-instagram",
+            "text": "@smmithmat"
+        }
+    ],
+    "profile": "I am a person, reponsible with their work during working hours. Finish various technical and higher studies at universities. I have several years of experience and achievements in the labor field.",
+    "education": [
+        {
+            "title": "MASTER OF DESIGN",
+            "studies": "University of Studies",
+            "year": "2010 - 2015"
+        },
+        {
+            "title": "WEB DEVELOPER",
+            "studies": "Institute Studies",
+            "year": "2016 - 2019"
+        },
+        {
+            "title": "MASTER IN UI/UX",
+            "studies": "Institute Studies",
+            "year": "2019 - 2021"
+        }
+    ],
+    "skills": {
+        "programLanguages": [
+            "Html",
+            "Css",
+            "Sass",
+            "JavaScript"
+        ],
+        "technique": [
+            "Angular",
+            "Firebase",
+            "React"
+        ]
+    },
+    "experience": [
+        {
+            "title": "MASTER OF DESIGN",
+            "company": "From 2013 to 2015 | Tech Soft",
+            "description": "Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity."
+        },
+        {
+            "title": "UI/UX DESIGN AREA",
+            "company": "From 2017 to 2019 | Adobe Inc",
+            "description": "Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity."
+        },
+        {
+            "title": "MOBILE APPLICATION DEVELOPER",
+            "company": "From 2019 to 2021 | App Tech",
+            "description": "Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity."
+        }
+    ],
+    "certificates": [
+        {
+            "title": "Certified for compliance in the work area (2012)",
+            "description": "For meeting the expectations of the leading the team to work the specifed tasks in the labor field."
+        },
+        {
+            "title": "Certified of attendance on computer technology",
+            "description": "For meeting the expectations of the leading the team to work the specifed tasks in the labor field."
+        },
+        {
+            "title": "Achievement medal for productivity excellence during the year (2019)",
+            "description": "For meeting the expectations of the leading the team to work the specifed tasks in the labor field."
+        }
+    ],
+    "references": [
+        {
+            "position": "Sr. Director",
+            "name": "Mr. Clay Doe",
+            "contacts": [
+                "Phone: 999-888-777",
+                "Email: user@gmail.com"
+            ]
+        },
+        {
+            "position": "Mag. Developer",
+            "name": "Mr. Robbinson Bass",
+            "contacts": [
+                "Phone: 999-888-777",
+                "Email: user@gmail.com"
+            ]
+        }
+    ],
+    "languages": [
+        "Spanish",
+        "English",
+        "French"
+    ],
+    "interests": [
+        {
+            "icon": "bx-headphone",
+            "name": "Music"
+        },
+        {
+            "icon": "bxs-plane-alt",
+            "name": "Travel"
+        },
+        {
+            "icon": "bx-book",
+            "name": "Read"
+        },
+        {
+            "icon": "bx-dumbbell",
+            "name": "Fitness"
+        }
+    ]
+}

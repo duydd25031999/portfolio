@@ -4,76 +4,9 @@ import ItemslistData from './ItemslistData.jsx'
 import GlobalContext from '../contexts/GlobalContext.jsx'
 import html2pdf from 'html2pdf.js'
 
-const avatar = require('../images/perfil.jpg')
+const data = require('../data.json')
 
-const userName = {
-    first: 'Smith',
-    last: 'Matthew',
-}
-
-const homeInfo = [
-    {
-        icon: 'bx-map',
-        text: 'Av. Bolivar #123 Lima - Peru',
-    },
-    {
-        icon: 'bx-envelope',
-        text: 'user@gmail.com',
-    },
-    {
-        icon: 'bx-phone',
-        text: '999-888-777',
-    },
-]
-
-const socialLinks = [
-    {
-        icon: 'bxl-linkedin-square',
-        text: '@smmithmat',
-    },
-    {
-        icon: 'bxl-facebook-square',
-        text: '@smmithmat',
-    },
-    {
-        icon: 'bxl-instagram',
-        text: '@smmithmat',
-    },
-]
-
-const profile = "I am a person, reponsible with their work during working hours. Finish various technical and higher studies at universities. I have several years of experience and achievements in the labor field."
-
-const education = [
-    {
-        title: 'MASTER OF DESIGN',
-        studies: 'University of Studies',
-        year: '2010 - 2015',
-    },
-    {
-        title: 'WEB DEVELOPER',
-        studies: 'Institute Studies',
-        year: '2016 - 2019',
-    },
-    {
-        title: 'MASTER IN UI/UX',
-        studies: 'Institute Studies',
-        year: '2019 - 2021',
-    },
-]
-
-const skills = {
-    programLanguages: [
-        'Html',
-        'Css',
-        'Sass',
-        'JavaScript',
-    ],
-    technique: [
-        'Angular',
-        'Firebase',
-        'React',
-    ],
-}
+const avatar = require(`../images/${data.avatar}`)
 
 const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
     const globalValue = React.useContext(GlobalContext)
@@ -82,9 +15,9 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
         document.body.classList.add('scale-cv')
 
         const opt = {
-            margin: 1,
-            filename: "DoDucDuy_CV.pdf",
-            image: { type: "jpeg", quality: 0.98 },
+            margin: 0.1,
+            filename: data.pdfName,
+            // image: { type: "jpeg", quality: 0.98 },
             html2canvas: { scale: 4 },
             jsPDF: { format: "a4", orientation: "portrait" },
         };
@@ -103,7 +36,7 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
                 <div className="home__container section bd-grid">
                     <div className="home__data bd-grid">
                         <img src={avatar} alt="" className="home__img" />
-                        <h1 className="home__tile">{userName.first} <b>{userName.last}</b></h1>
+                        <h1 className="home__tile">{data.userName.first} <b>{data.userName.last}</b></h1>
                         <h3 className="home__profession">Web developer</h3>
 
                         {/* Button to generate and download the pdf. Available for mobile. */}
@@ -115,7 +48,7 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
                     </div>
 
                     <div className="home__address bd-grid">
-                        {homeInfo.map((item, i) => (
+                        {data.homeInfo.map((item, i) => (
                             <HomeInformation item={item} key={i} />
                         ))}
                     </div>
@@ -134,7 +67,7 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
                 </h2>
 
                 <div className="social__container bd-grid">
-                    {socialLinks.map((item, i) => (
+                    {data.socialLinks.map((item, i) => (
                         <SocialLink item={item} key={i} />
                     ))}
                 </div>
@@ -145,7 +78,7 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
                 <h2 className="section-title">PROFILE</h2>
 
                 <p className="profile__description">
-                    {profile}
+                    {data.profile}
                 </p>
             </section>
 
@@ -155,8 +88,8 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
 
                 <div className="timeline__container bd-grid">
                     {
-                        education.map((item, i) => (
-                            <TimelineContent isEducation key={i} item={item} isLast={i == (education.length - 1)} />
+                        data.education.map((item, i) => (
+                            <TimelineContent isEducation key={i} item={item} isLast={i == (data.education.length - 1)} />
                         ))
                     }
                 </div>
@@ -167,8 +100,8 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
                 <h2 className="section-title">SKILLS</h2>
 
                 <div className="itemslist__content bd-grid">
-                    <ItemslistData isSkills list={skills.programLanguages} />
-                    <ItemslistData isSkills list={skills.technique} />
+                    <ItemslistData isSkills list={data.skills.programLanguages} />
+                    <ItemslistData isSkills list={data.skills.technique} />
                 </div>
             </section>
         </div>

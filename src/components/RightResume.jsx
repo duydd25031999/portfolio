@@ -3,82 +3,7 @@ import TimelineContent from './TimelineContent.jsx'
 import ItemslistData from './ItemslistData.jsx'
 import GlobalContext from '../contexts/GlobalContext.jsx'
 
-const experience = [
-    {
-        title: 'MASTER OF DESIGN',
-        company: 'From 2013 to 2015 | Tech Soft',
-        description: 'Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.',
-    },
-    {
-        title: 'UI/UX DESIGN AREA',
-        company: 'From 2017 to 2019 | Adobe Inc',
-        description: 'Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.',
-    },
-    {
-        title: 'MOBILE APPLICATION DEVELOPER',
-        company: 'From 2019 to 2021 | App Tech',
-        description: 'Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.',
-    },
-]
-
-const certificates = [
-    {
-        title: 'Certified for compliance in the work area (2012)',
-        description: 'For meeting the expectations of the leading the team to work the specifed tasks in the labor field.',
-    },
-    {
-        title: 'Certified of attendance on computer technology',
-        description: 'For meeting the expectations of the leading the team to work the specifed tasks in the labor field.',
-    },
-    {
-        title: 'Achievement medal for productivity excellence during the year (2019)',
-        description: 'For meeting the expectations of the leading the team to work the specifed tasks in the labor field.',
-    },
-]
-
-const references = [
-    {
-        position: 'Sr. Director',
-        name: 'Mr. Clay Doe',
-        contacts: [
-            'Phone: 999-888-777',
-            'Email: user@gmail.com',
-        ],
-    },
-    {
-        position: 'Mag. Developer',
-        name: 'Mr. Robbinson Bass',
-        contacts: [
-            'Phone: 999-888-777',
-            'Email: user@gmail.com',
-        ],
-    },
-]
-
-const languages = [
-    'Spanish',
-    'English',
-    'French',
-]
-
-const interests = [
-    {
-        icon: 'bx-headphone',
-        name: 'Music',
-    },
-    {
-        icon: 'bxs-plane-alt',
-        name: 'Travel',
-    },
-    {
-        icon: 'bx-book',
-        name: 'Read',
-    },
-    {
-        icon: 'bx-dumbbell',
-        name: 'Fitness',
-    },
-]
+const data = require('../data.json')
 
 const RightResume = () => {
     const globalValue = React.useContext(GlobalContext)
@@ -90,8 +15,8 @@ const RightResume = () => {
                 <h2 className="section-title">EXPERIENCE</h2>
 
                 <div className="experience__container bd-grid">
-                    {experience.map((item, i) => (
-                        <TimelineContent isExperence item={item} key={i} isLast={i == (experience.length - 1)} />
+                    {data.experience.map((item, i) => (
+                        <TimelineContent isExperence item={item} key={i} isLast={i == (data.experience.length - 1)} />
                     ))}
                 </div>
             </section>
@@ -101,7 +26,7 @@ const RightResume = () => {
                 <h2 className="section-title">CERTIFICATES</h2>
 
                 <div className="certificate__container bd-grid">
-                    {certificates.map((item, i) => (
+                    {data.certificates.map((item, i) => (
                         <CertificateContent item={item} key={i} />
                     ))}
                 </div>
@@ -112,7 +37,7 @@ const RightResume = () => {
                 <h2 className="section-title">REFERENCES</h2>
 
                 <div className="references__container bd-grid">
-                    {references.map((item, i) => (
+                    {data.references.map((item, i) => (
                         <ReferencesContent item={item} key={i} />
                     ))}
                 </div>
@@ -124,7 +49,7 @@ const RightResume = () => {
 
                 <div className="itemslist__container">
                     <ul className="itemslist__content bd-grid">
-                        <ItemslistData list={languages} />
+                        <ItemslistData list={data.languages} />
                     </ul>
                 </div>
             </section>
@@ -135,7 +60,7 @@ const RightResume = () => {
                 <h2 className="section-title">INTERESTS</h2>
 
                 <div className="interests__container bd-grid">
-                    {interests.map((item, i) => (
+                    {data.interests.map((item, i) => (
                         <InterestsContent item={item} key={i} />
                     ))}
                 </div>
