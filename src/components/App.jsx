@@ -67,7 +67,6 @@ const App = () => {
           <LeftResume 
             onThemeChange={handleThemeChange} 
             lightTheme={lightTheme} 
-            isMoblie={isMoblie} 
             areaCv={areaCv} 
           />
           <RightResume />

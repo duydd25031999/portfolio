@@ -1,31 +1,39 @@
 import React from "react";
-import GlobalContext from '../contexts/GlobalContext.jsx'
+import GlobalContext from "../contexts/GlobalContext.jsx";
 
-const data = require('../data.json')
+const data = require("../data.json");
 
 const Header = () => {
-  const globalValue = React.useContext(GlobalContext)
+  const globalValue = React.useContext(GlobalContext);
 
-  const [showMenu, setShowMenu] = React.useState(false)
+  const [showMenu, setShowMenu] = React.useState(false);
   const toggleMenu = () => {
-    setShowMenu(!showMenu)
-  }
+    setShowMenu(!showMenu);
+  };
   const closeMenu = () => {
-    setShowMenu(false)
-  }
+    setShowMenu(false);
+  };
 
   return (
     // ========== HEADER ==========
     <header className="l-header" id="header">
       <nav className="nav bd-container">
         <a href="#" className="nav__logo">
-          {data.userName.last}
-      </a>
+          {data.userName.first}
+        </a>
 
-        <div className={`nav__menu ${showMenu ? 'show-menu' : ''}`} id="nav-menu">
+        <div
+          className={`nav__menu ${showMenu ? "show-menu" : ""}`}
+          id="nav-menu"
+        >
           <ul className="nav__list">
             {data.navLinks.map((item, i) => (
-              <NavItem item={item} key={i} isActive={item.id == globalValue.activeSection} onClick={closeMenu} />
+              <NavItem
+                item={item}
+                key={i}
+                isActive={item.id == globalValue.activeSection}
+                onClick={closeMenu}
+              />
             ))}
           </ul>
         </div>
@@ -35,12 +43,16 @@ const Header = () => {
         </div>
       </nav>
     </header>
-  )
+  );
 };
 
 const NavItem = ({ item, onClick, isActive }) => (
   <li className="nav__item">
-    <a href={`#${item.id}`} className={`nav__link ${isActive && 'active-link'}`} onClick={onClick}>
+    <a
+      href={`#${item.id}`}
+      className={`nav__link ${isActive && "active-link"}`}
+      onClick={onClick}
+    >
       <i className={`bx ${item.icon} nav__icon`}></i>
       {item.text}
     </a>

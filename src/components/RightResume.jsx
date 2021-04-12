@@ -10,6 +10,19 @@ const RightResume = () => {
 
     return (
         <div className="resume__right">
+            {/* ========== EDUCATION ========== */}
+            <section ref={globalValue.refSection} className="education timeline section" id="education">
+                <h2 className="section-title">EDUCATION</h2>
+
+                <div className="timeline__container bd-grid">
+                    {
+                        data.education.map((item, i) => (
+                            <TimelineContent isEducation key={i} item={item} isLast={i == (data.education.length - 1)} />
+                        ))
+                    }
+                </div>
+            </section>
+
             {/* ========== EXPERIENCE ========== */}
             <section ref={globalValue.refSection} className="experience section" id="experience">
                 <h2 className="section-title">EXPERIENCE</h2>
@@ -18,39 +31,6 @@ const RightResume = () => {
                     {data.experience.map((item, i) => (
                         <TimelineContent isExperence item={item} key={i} isLast={i == (data.experience.length - 1)} />
                     ))}
-                </div>
-            </section>
-
-            {/* ========== CERTIFICATES ========== */}
-            <section ref={globalValue.refSection} className="certificate section" id="certificates">
-                <h2 className="section-title">CERTIFICATES</h2>
-
-                <div className="certificate__container bd-grid">
-                    {data.certificates.map((item, i) => (
-                        <CertificateContent item={item} key={i} />
-                    ))}
-                </div>
-            </section>
-
-            {/* ========== REFERENCES ========== */}
-            <section ref={globalValue.refSection} className="references section" id="references">
-                <h2 className="section-title">REFERENCES</h2>
-
-                <div className="references__container bd-grid">
-                    {data.references.map((item, i) => (
-                        <ReferencesContent item={item} key={i} />
-                    ))}
-                </div>
-            </section>
-
-            {/* ========== LANGUAGES ========== */}
-            <section className="languages itemslist section">
-                <h2 className="section-title">LANGUAGES</h2>
-
-                <div className="itemslist__container">
-                    <ul className="itemslist__content bd-grid">
-                        <ItemslistData list={data.languages} />
-                    </ul>
                 </div>
             </section>
 

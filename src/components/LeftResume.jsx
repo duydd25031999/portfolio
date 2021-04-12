@@ -8,7 +8,7 @@ const data = require('../data.json')
 
 const avatar = require(`../images/${data.avatar}`)
 
-const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
+const LeftResume = ({ lightTheme, onThemeChange, areaCv }) => {
     const globalValue = React.useContext(GlobalContext)
 
     const clickGenerate = () => {
@@ -35,7 +35,7 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
                 <div className="home__container section bd-grid">
                     <div className="home__data bd-grid">
                         <img src={avatar} alt="" className="home__img" />
-                        <h1 className="home__tile">{data.userName.first} <b>{data.userName.last}</b></h1>
+                        <h1 className="home__tile">{data.userName.last} <b>{data.userName.first}</b></h1>
                         <h3 className="home__profession">Web developer</h3>
 
                         {/* Button to generate and download the pdf. Available for mobile. */}
@@ -72,26 +72,13 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
                 </div>
             </section>
 
-            {/* ========== PROFILE ========== */}
-            <section ref={globalValue.refSection} className="profile section" id="profile">
-                <h2 className="section-title">PROFILE</h2>
+            {/* ========== OBJECTIVE ========== */}
+            <section ref={globalValue.refSection} className="objective section" id="objective">
+                <h2 className="section-title">OBJECTIVE</h2>
 
-                <p className="profile__description">
-                    {data.profile}
+                <p className="objective__description">
+                    {data.objective}
                 </p>
-            </section>
-
-            {/* ========== EDUCATION ========== */}
-            <section ref={globalValue.refSection} className="education timeline section" id="education">
-                <h2 className="section-title">EDUCATION</h2>
-
-                <div className="timeline__container bd-grid">
-                    {
-                        data.education.map((item, i) => (
-                            <TimelineContent isEducation key={i} item={item} isLast={i == (data.education.length - 1)} />
-                        ))
-                    }
-                </div>
             </section>
 
             {/* ========== SKILLS  ========== */}
@@ -99,8 +86,11 @@ const LeftResume = ({ lightTheme, onThemeChange, isMoblie, areaCv }) => {
                 <h2 className="section-title">SKILLS</h2>
 
                 <div className="itemslist__content bd-grid">
-                    <ItemslistData isSkills list={data.skills.programLanguages} />
-                    <ItemslistData isSkills list={data.skills.technique} />
+                    {
+                        data.skills.map((item, i) => (
+                            <ItemslistData isSkills list={item} key={i} />
+                        ))
+                    }
                 </div>
             </section>
         </div>

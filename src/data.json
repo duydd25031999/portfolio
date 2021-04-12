@@ -11,14 +11,14 @@
             "text": "Objective"
         },
         {
-            "id": "education",
-            "icon": "bx-book",
-            "text": "Education"
-        },
-        {
             "id": "skills",
             "icon": "bx-receipt",
             "text": "Skills"
+        },
+        {
+            "id": "education",
+            "icon": "bx-book",
+            "text": "Education"
         },
         {
             "id": "experience",
@@ -63,31 +63,35 @@
             "link": "https://www.linkedin.com/in/docducduy-vietnam"
         }
     ],
-    "profile": "I always desire to work in a dynamic and professional environment so that I can learn and develop myself. I utilize my skills, software development experience and technology savvy to become a senior developer and bring a lot of value to the company.",
+    "objective": "I always desire to work in a dynamic and professional environment so that I can learn and develop myself. I utilize my skills, software development experience and technology savvy to become a senior developer and bring a lot of value to the company.",
     "education": [
         {
             "title": "SOFTWARE ENGINEERING",
-            "studies": "University of Studies",
+            "studies": "FPT University",
             "year": "SEPTEMBER 2017 - NOW",
             "description": [
                 {
-
+                    "content": [
+                        "Received a scholarship of 70% of tuition fee in the entrance exam of FPT University.",
+                        "“Project Management Principles and Practices” Coursera certificate:\nhttps://coursera.org/share/1775cd2f56477e9233b2d37f062da11e",
+                        "Current GPA: 7.7 / 10."
+                    ]
                 }
             ]
         }
     ],
     "skills": [
         {
-            "name": "Programming Language:",
-            "items": [
+            "title": "Programming Language",
+            "content": [
                 "Java",
                 "JavaScript",
                 "PHP"
             ]
         },
         {
-            "name": "Web Development:",
-            "items": [
+            "title": "Web Development",
+            "content": [
                 "HTML5",
                 "CSS3",
                 "jQuery",
@@ -95,22 +99,22 @@
             ]
         },
         {
-            "name": "JavaScript Frameworks:",
-            "items": [
+            "title": "JS Frameworks",
+            "content": [
                 "Vue",
                 "Vuetify"
             ]
         },
         {
-            "name": "PHP Frameworks:",
-            "items": [
+            "title": "PHP Frameworks",
+            "content": [
                 "Laravel",
                 "CakePHP"
             ]
         },
         {
-            "name": "Database",
-            "items": [
+            "title": "Database",
+            "content": [
                 "MySQL",
                 "MongoDB"
             ]
@@ -120,13 +124,13 @@
         {
             "title": "WEB DEVELOPER",
             "company": "IMPL VIETNAM",
-            "year": "DECEMBER 2019 – TO MAY 2020",
+            "year": "DECEMBER 2019 – MAY 2020",
             "description": [
                 {
                     "title": "Responsibilities:",
                     "content": [
                         "Full-time job.",
-                        "Maintain and develop of open-source web projects for Japanese customers.",
+                        "Maintain and develop open-source web projects.",
                         "Main programming language is PHP.",
                         "Using PHP framework (Laravel, CakePHP) and MySQL database.",
                         "Using Bootstrap 4, jQuery to develop UI."
@@ -140,73 +144,12 @@
                         "Deep study of the theory of HTML, CSS, JavaScript."
                     ]
                 }
-            ],
-            "projects": [
-                {
-                    "name": "SoundID",
-                    "year": "MARCH 2020 – MAY 2020",
-                    "description": [
-                        {
-                            "title": "SoundID is a bar reservation project in Japan"
-                        },
-                        {
-                            "title": "Positions: Web Developer with Frameworks: CakePHP, Bootstrap, jQuery and Database: MySQL."
-                        },
-                        {
-                            "title": "Responsibilities:",
-                            "content": [
-                                "Development",
-                                "Optimize code",
-                                "Bug Fixing"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "MoneyLab",
-                    "year": "FEBRUARY 2020 – MARCH 2020",
-                    "description": [
-                        {
-                            "title": "MoneyLab is a project that manages real estate records."
-                        },
-                        {
-                            "title": "Positions: Backend Developer with Frameworks: Laravel and Database: MySQL."
-                        },
-                        {
-                            "title": "Responsibilities:",
-                            "content": [
-                                "Development",
-                                "Optimize code",
-                                "Bug Fixing"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Slownet",
-                    "year": "JANUARY 2020 – TO FEBRUARY 2020",
-                    "description": [
-                        {
-                            "title": "Online diary for the elderly in Japan to store daily activities, emotions, health information. From that data the app gives advice to the user."
-                        },
-                        {
-                            "title": "Positions: Web Developer with Frameworks: Laravel, Bootstrap, jQuery and Database: MySQL."
-                        },
-                        {
-                            "title": "Responsibilities:",
-                            "content": [
-                                "Maintain and develop new features",
-                                "Bug Fixing"
-                            ]
-                        }
-                    ]
-                }
             ]
         },
         {
             "title": "FRONT-END DEVELOPER",
             "company": "FPT SOFTWARE",
-            "year": "DECEMBER 2019 – TO MAY 2020",
+            "year": "JANUARY 2019 – AUGUST 2019",
             "description": [
                 {
                     "title": "Responsibilities:",
@@ -221,31 +164,90 @@
                     "content": [
                         "Developing a professional project for the first time.",
                         "Experience the Agile approach to developing professional software.",
-                        "Experience advanced technologies such as cloud storage, artificial intelligence."
+                        "Experience advanced technologies such as cloud storage, AI."
                     ]
                 }
-            ],
-            "projects": [
+            ]
+        }
+    ],
+    "project": [
+        {
+            "name": "SoundID",
+            "year": "MARCH 2020 – MAY 2020",
+            "description": [
                 {
-                    "name": "akaTrans",
-                    "year": "JANUARY 2020 – FEBRUARY 2020",
-                    "description": [
-                        {
-                            "title": "akaTrans is a computer-assisted translation tool which improves language professional’s productivity at every step of the translation process."
-                        },
-                        {
-                            "title": "Positions: Front-end Developer with Frameworks: Vue, Vuetify."
-                        },
-                        {
-                            "title": "Responsibilities:",
-                            "content": [
-                                "Analysis and design",
-                                "Development",
-                                "Review code",
-                                "Optimize code",
-                                "Bug Fixing"
-                            ]
-                        }
+                    "title": "SoundID is a bar reservation project in Japan"
+                },
+                {
+                    "title": "Positions: Web Developer with Frameworks: CakePHP, Bootstrap, jQuery and Database: MySQL."
+                },
+                {
+                    "title": "Responsibilities:",
+                    "content": [
+                        "Development",
+                        "Optimize code",
+                        "Bug Fixing"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MoneyLab",
+            "year": "FEBRUARY 2020 – MARCH 2020",
+            "description": [
+                {
+                    "title": "MoneyLab is a project that manages real estate records."
+                },
+                {
+                    "title": "Positions: Backend Developer with Frameworks: Laravel and Database: MySQL."
+                },
+                {
+                    "title": "Responsibilities:",
+                    "content": [
+                        "Development",
+                        "Optimize code",
+                        "Bug Fixing"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Slownet",
+            "year": "JANUARY 2020 – TO FEBRUARY 2020",
+            "description": [
+                {
+                    "title": "Online diary for the elderly in Japan to store daily activities, emotions, health information. From that data the app gives advice to the user."
+                },
+                {
+                    "title": "Positions: Web Developer with Frameworks: Laravel, Bootstrap, jQuery and Database: MySQL."
+                },
+                {
+                    "title": "Responsibilities:",
+                    "content": [
+                        "Maintain and develop new features",
+                        "Bug Fixing"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "akaTrans",
+            "year": "JANUARY 2019 – AUGUST 2019",
+            "description": [
+                {
+                    "title": "akaTrans is a computer-assisted translation tool which improves language professional’s productivity at every step of the translation process."
+                },
+                {
+                    "title": "Positions: Front-end Developer with Frameworks: Vue, Vuetify."
+                },
+                {
+                    "title": "Responsibilities:",
+                    "content": [
+                        "Analysis and design",
+                        "Development",
+                        "Review code",
+                        "Optimize code",
+                        "Bug Fixing"
                     ]
                 }
             ]
